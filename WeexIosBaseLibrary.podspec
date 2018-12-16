@@ -44,60 +44,60 @@ TODO: Add long description of the pod here.
   
   #Device信息非ARC
   s.subspec 'BMDevice' do |ss|
-      ss.source_files  = "Source/BMDevice/*.{c,h,m,mm,S}"
+      ss.source_files  = "WeexIosBaseLibrary/BMDevice/*.{c,h,m,mm,S}"
       ss.frameworks    = "Security"
       ss.requires_arc  = false
   end
   
   #自定义转场动画
   s.subspec 'BMTransition' do |ss|
-      ss.source_files  = "Source/BMTransition/*.{c,h,m,mm,S}"
-      ss.public_header_files = "Source/BMTransition/*.h"
+      ss.source_files  = "WeexIosBaseLibrary/BMTransition/*.{c,h,m,mm,S}"
+      ss.public_header_files = "WeexIosBaseLibrary/BMTransition/*.h"
       ss.requires_arc  = true
   end
   
   #Debug 相关类
   s.subspec 'BMDebug' do |ss|
-      ss.source_files  = "Source/BMDebug/**/*.{c,h,m,mm,S}"
-      ss.public_header_files = "Source/BMDebug/**/*.h"
+      ss.source_files  = "WeexIosBaseLibrary/BMDebug/**/*.{c,h,m,mm,S}"
+      ss.public_header_files = "WeexIosBaseLibrary/BMDebug/**/*.h"
       ss.requires_arc  = true
   end
   
   #对iOS系统类的拓展
   s.subspec 'BMExtension' do |ss|
-      ss.source_files  = "Source/BMExtension/**/*.{c,h,m,mm,S}"
-      ss.public_header_files = "Source/BMExtension/**/*.h"
+      ss.source_files  = "WeexIosBaseLibrary/BMExtension/**/*.{c,h,m,mm,S}"
+      ss.public_header_files = "WeexIosBaseLibrary/BMExtension/**/*.h"
       ss.requires_arc  = true
       ss.libraries = "bz2"
   end
   
   #对Weex系统类的拓展
   s.subspec 'BMWeexExtension' do |ss|
-      ss.source_files  = "Source/BMWeexExtension/*.{c,h,m,mm,S}"
-      ss.public_header_files = "Source/BMWeexExtension/*.h"
-      ss.resources = 'Source/BMWeexExtension/Resources/*'
+      ss.source_files  = "WeexIosBaseLibrary/BMWeexExtension/*.{c,h,m,mm,S}"
+      ss.public_header_files = "WeexIosBaseLibrary/BMWeexExtension/*.h"
+      ss.resources = 'WeexIosBaseLibrary/BMWeexExtension/Resources/*'
       ss.requires_arc  = true
   end
   
   #Controller类
   s.subspec 'BMController' do |ss|
-      ss.source_files  = "Source/BMController/**/*.{c,h,m,mm,S}"
-      ss.public_header_files = "Source/BMController/**/*.h"
+      ss.source_files  = "WeexIosBaseLibrary/BMController/**/*.{c,h,m,mm,S}"
+      ss.public_header_files = "WeexIosBaseLibrary/BMController/**/*.h"
       ss.requires_arc  = true
   end
   
   #Network类
   s.subspec 'BMNetwork' do |ss|
-      ss.source_files  = "Source/BMNetwork/**/*.{c,h,m,mm,S}"
-      ss.public_header_files = "Source/BMNetwork/**/*.h"
+      ss.source_files  = "WeexIosBaseLibrary/BMNetwork/**/*.{c,h,m,mm,S}"
+      ss.public_header_files = "WeexIosBaseLibrary/BMNetwork/**/*.h"
       ss.requires_arc  = true
   end
   
   #Weex Module
   s.subspec 'BMModule' do |ss|
-      ss.source_files  = "Source/BMModule/**/*.{c,h,m,mm,S}"
-      ss.public_header_files = "Source/BMModule/**/*.h"
-      ss.resources = 'Source/BMModule/Modal/SVProgressHUD/SVProgressHUD.bundle'
+      ss.source_files  = "WeexIosBaseLibrary/BMModule/**/*.{c,h,m,mm,S}"
+      ss.public_header_files = "WeexIosBaseLibrary/BMModule/**/*.h"
+      ss.resources = 'WeexIosBaseLibrary/BMModule/Modal/SVProgressHUD/SVProgressHUD.bundle'
       ss.requires_arc  = true
       ss.dependency "Realm",'3.1.0'
       ss.dependency "BindingX",'1.0.3'
@@ -106,48 +106,48 @@ TODO: Add long description of the pod here.
   
   #Weex BMManager
   s.subspec 'BMManager' do |ss|
-      ss.source_files  = "Source/BMManager/**/*.{c,h,m,mm,S}"
-      ss.public_header_files = "Source/BMManager/**/*.h"
+      ss.source_files  = "WeexIosBaseLibrary/BMManager/**/*.{c,h,m,mm,S}"
+      ss.public_header_files = "WeexIosBaseLibrary/BMManager/**/*.h"
       ss.requires_arc  = true
   end
   
   #自定义Handler
   s.subspec 'BMHandler' do |ss|
-      ss.source_files  = "Source/BMHandler/*.{c,h,m,mm,S}"
-      ss.public_header_files = "Source/BMHandler/*.h"
+      ss.source_files  = "WeexIosBaseLibrary/BMHandler/*.{c,h,m,mm,S}"
+      ss.public_header_files = "SouWeexIosBaseLibraryrce/BMHandler/*.h"
       ss.requires_arc  = true
   end
   
   #自定义CustomUI
   s.subspec 'BMCustomUI' do |ss|
-      ss.source_files  = "Source/BMCustomUI/**/*.{c,h,m,mm,S}"
-      ss.public_header_files = "Source/BMCustomUI/**/*.h"
+      ss.source_files  = "WeexIosBaseLibrary/BMCustomUI/**/*.{c,h,m,mm,S}"
+      ss.public_header_files = "WeexIosBaseLibrary/BMCustomUI/**/*.h"
       ss.requires_arc  = true
   end
   
   #自定义组件
   s.subspec 'BMComponent' do |ss|
-      ss.source_files  = "Source/BMComponent/**/*.{c,h,m,mm,S}"
-      ss.public_header_files = "Source/BMComponent/**/*.h"
+      ss.source_files  = "WeexIosBaseLibrary/BMComponent/**/*.{c,h,m,mm,S}"
+      ss.public_header_files = "WeexIosBaseLibrary/BMComponent/**/*.h"
       ss.requires_arc  = true
-      ss.resources = 'Source/BMComponent/Calendar/Resources/*.png','Source/BMComponent/Chart/Resources/*'
+      ss.resources = 'WeexIosBaseLibrary/BMComponent/Calendar/Resources/*.png','WeexIosBaseLibrary/BMComponent/Chart/Resources/*'
       ss.dependency 'FSCalendar','2.7.8'
       ss.dependency 'YYText', '1.0.7'
   end
   
   #自定义组件
   s.subspec 'BMModel' do |ss|
-      ss.source_files  = "Source/BMModel/*.{c,h,m,mm,S}"
-      ss.public_header_files = "Source/BMModel/*.h"
+      ss.source_files  = "WeexIosBaseLibrary/BMModel/*.{c,h,m,mm,S}"
+      ss.public_header_files = "WeexIosBaseLibrary/BMModel/*.h"
       ss.requires_arc  = true
   end
   
   #ErosApp
   s.subspec 'ErosApp' do |ss|
-      ss.source_files  = "Source/ErosApp/**/*.{c,h,m,mm,S,pch}"
-      ss.public_header_files = "Source/ErosApp/**/*.h"
+      ss.source_files  = "WeexIosBaseLibrary/ErosApp/**/*.{c,h,m,mm,S,pch}"
+      ss.public_header_files = "WeexIosBaseLibrary/ErosApp/**/*.h"
       ss.requires_arc  = true
-      ss.prefix_header_file = 'Source/ErosApp/ErosDefine/PrefixHeader.pch'
+      ss.prefix_header_file = 'WeexIosBaseLibrary/ErosApp/ErosDefine/PrefixHeader.pch'
   end
   
   # s.resource_bundles = {
