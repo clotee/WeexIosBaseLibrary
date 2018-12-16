@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'WeexIosBaseLibrary_Example' do
+  pod 'WeexIosBaseLibrary', :path => '../'
+
+  target 'WeexIosBaseLibrary_Tests' do
+    inherit! :search_paths
+
+    pod 'Kiwi'
+  end
+end

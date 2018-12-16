@@ -1,0 +1,6 @@
+framework module WeexIosBaseLibrary {
+  umbrella header "WeexIosBaseLibrary-umbrella.h"
+
+  export *
+  module * { export * }
+}

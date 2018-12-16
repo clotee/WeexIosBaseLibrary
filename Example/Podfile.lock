@@ -1,0 +1,19 @@
+PODS:
+  - Kiwi (3.0.0)
+  - WeexIosBaseLibrary (0.1.0)
+
+DEPENDENCIES:
+  - Kiwi
+  - WeexIosBaseLibrary (from `../`)
+
+EXTERNAL SOURCES:
+  WeexIosBaseLibrary:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Kiwi: fbeafef0f00e4d8f7dcb3420a4930afe70af77f7
+  WeexIosBaseLibrary: f84d46f2075a133a97839ba67edfc904ac6aca89
+
+PODFILE CHECKSUM: cbc707584c02ff6b3494540caca406a8b8dd1643
+
+COCOAPODS: 1.4.0
